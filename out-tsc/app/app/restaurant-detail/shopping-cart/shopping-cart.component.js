@@ -8,24 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { RestaurantsService } from './restaurants.service';
-var RestaurantsComponent = /** @class */ (function () {
-    function RestaurantsComponent(restaurantService) {
-        this.restaurantService = restaurantService;
+var ShoppingCartComponent = /** @class */ (function () {
+    function ShoppingCartComponent() {
     }
-    RestaurantsComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.restaurantService.restaurants()
-            .subscribe(function (restaurants) { return _this.restaurants = restaurants; });
+    ShoppingCartComponent.prototype.ngOnInit = function () {
     };
-    RestaurantsComponent = __decorate([
+    ShoppingCartComponent = __decorate([
         Component({
-            selector: 'mt-restaurants',
-            templateUrl: './restaurants.component.html'
+            selector: 'mt-shopping-cart',
+            templateUrl: './shopping-cart.component.html'
         }),
-        __metadata("design:paramtypes", [RestaurantsService])
-    ], RestaurantsComponent);
-    return RestaurantsComponent;
+        __metadata("design:paramtypes", [])
+    ], ShoppingCartComponent);
+    return ShoppingCartComponent;
 }());
-export { RestaurantsComponent };
-//# sourceMappingURL=restaurants.component.js.map
+export { ShoppingCartComponent };
+//# sourceMappingURL=shopping-cart.component.js.map
