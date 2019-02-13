@@ -8,17 +8,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { RestaurantsService } from '../restaurants/restaurants.service';
 var RestaurantDetailComponent = /** @class */ (function () {
-    function RestaurantDetailComponent() {
+    function RestaurantDetailComponent(restaurantsService, route) {
+        this.restaurantsService = restaurantsService;
+        this.route = route;
     }
     RestaurantDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.restaurantsService.restaurantsById(this.route.snapshot.params['id'])
+            .subscribe(function (restaurant) { return _this.restaurant = restaurant; });
     };
     RestaurantDetailComponent = __decorate([
         Component({
             selector: 'mt-restaurant-detail',
             templateUrl: './restaurant-detail.component.html'
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [RestaurantsService,
+            ActivatedRoute])
     ], RestaurantDetailComponent);
     return RestaurantDetailComponent;
 }());

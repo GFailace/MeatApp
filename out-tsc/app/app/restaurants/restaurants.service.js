@@ -22,6 +22,21 @@ var RestaurantsService = /** @class */ (function () {
             .map(function (response) { return response.json(); })
             .catch(ErrorHandler.handleError);
     };
+    RestaurantsService.prototype.restaurantsById = function (id) {
+        return this.http.get(MEAT_API + "/restaurants/" + id)
+            .map(function (response) { return response.json(); })
+            .catch(ErrorHandler.handleError);
+    };
+    RestaurantsService.prototype.reviewsOfRestaurant = function (id) {
+        return this.http.get(MEAT_API + "/restaurants/" + id + "/reviews")
+            .map(function (response) { return response.json(); })
+            .catch(ErrorHandler.handleError);
+    };
+    RestaurantsService.prototype.menuOfRestaurant = function (id) {
+        return this.http.get(MEAT_API + "/restaurants/" + id + "/menu")
+            .map(function (response) { return response.json(); })
+            .catch(ErrorHandler.handleError);
+    };
     RestaurantsService = __decorate([
         Injectable(),
         __metadata("design:paramtypes", [Http])

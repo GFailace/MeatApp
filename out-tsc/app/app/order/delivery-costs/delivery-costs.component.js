@@ -7,32 +7,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, Input, EventEmitter, Output } from '@angular/core';
-var MenuItemComponent = /** @class */ (function () {
-    function MenuItemComponent() {
-        this.add = new EventEmitter();
+import { Component, Input } from '@angular/core';
+var DeliveryCostsComponent = /** @class */ (function () {
+    function DeliveryCostsComponent() {
     }
-    MenuItemComponent.prototype.ngOnInit = function () {
+    DeliveryCostsComponent.prototype.ngOnInit = function () {
     };
-    MenuItemComponent.prototype.emitAddEvent = function () {
-        this.add.emit(this.menuItem);
+    DeliveryCostsComponent.prototype.total = function () {
+        return this.delivery + this.itemsValue;
     };
     __decorate([
         Input(),
-        __metadata("design:type", Object)
-    ], MenuItemComponent.prototype, "menuItem", void 0);
+        __metadata("design:type", Number)
+    ], DeliveryCostsComponent.prototype, "delivery", void 0);
     __decorate([
-        Output(),
-        __metadata("design:type", Object)
-    ], MenuItemComponent.prototype, "add", void 0);
-    MenuItemComponent = __decorate([
+        Input(),
+        __metadata("design:type", Number)
+    ], DeliveryCostsComponent.prototype, "itemsValue", void 0);
+    DeliveryCostsComponent = __decorate([
         Component({
-            selector: 'mt-menu-item',
-            templateUrl: './menu-item.component.html'
+            selector: 'mt-delivery-costs',
+            templateUrl: './delivery-costs.component.html'
         }),
         __metadata("design:paramtypes", [])
-    ], MenuItemComponent);
-    return MenuItemComponent;
+    ], DeliveryCostsComponent);
+    return DeliveryCostsComponent;
 }());
-export { MenuItemComponent };
-//# sourceMappingURL=menu-item.component.js.map
+export { DeliveryCostsComponent };
+//# sourceMappingURL=delivery-costs.component.js.map
