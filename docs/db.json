@@ -369,41 +369,5 @@
       "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
       "restaurantId": "tasty-treats"
     }
-  ],
-  "orders": [
-    {
-      "address": "Rua Rui Barbosa",
-      "number": "331",
-      "optionalAddress": "",
-      "paymentOption": "MON",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "burger"
-        },
-        {
-          "quantity": 1,
-          "menuId": "fries"
-        },
-        {
-          "quantity": 1,
-          "menuId": "coke.png"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "address": "Rua São Geraldo",
-      "number": "1680",
-      "optionalAddress": "",
-      "paymentOption": "DEB",
-      "orderItems": [
-        {
-          "quantity": 1,
-          "menuId": "sunday"
-        }
-      ],
-      "id": 2
-    }
   ]
 }
