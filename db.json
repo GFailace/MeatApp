@@ -225,13 +225,6 @@
     {
       "name": "Renata",
       "date": "2016-12-12T18:25:43",
-      "rating": 2,
-      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
-      "restaurantId": "bread-bakery"
-    },
-    {
-      "name": "Renata",
-      "date": "2016-12-12T18:25:43",
       "rating": 5,
       "comments": "Nunca deixou na mão, comida sempre deliciosa.",
       "restaurantId": "bread-bakery"
@@ -286,20 +279,6 @@
       "restaurantId": "coffee-corner"
     },
     {
-      "name": "André",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4.5,
-      "comments": "Excelente como sempre!",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "João",
-      "date": "2017-01-23T18:25:43",
-      "rating": 5,
-      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
-      "restaurantId": "green-food"
-    },
-    {
       "name": "Marcelo",
       "date": "2017-02-02T18:25:43",
       "rating": 4.5,
@@ -349,26 +328,11 @@
       "restaurantId": "tasty-treats"
     },
     {
-      "name": "Rafaela",
-      "date": "2017-01-12T18:25:43",
-      "rating": 5,
-      "comments": "Chegou rápido e perfeito!",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Julia",
-      "date": "2016-12-12T18:25:43",
-      "rating": 1.5,
-      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
-      "restaurantId": "tasty-treats"
-    },
-    {
       "name": "Marília",
       "date": "2016-12-20T18:25:43",
       "rating": 4.5,
       "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
       "restaurantId": "tasty-treats"
     }
-  ],
-  "orders": []
+  ]
 }
